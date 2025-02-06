@@ -1,0 +1,18 @@
+POST http://localhost:8081/translation
+X-Language: en
+Content-Type: application/json
+Authorization: Bearer Carpenstreet-Backend-Engineer
+
+{
+  "text": "테스트 문장"
+}
+
+### SMS API
+POST http://localhost:8081/sms
+Content-Type: application/json
+Authorization: Bearer Carpenstreet-Backend-Engineer
+
+{
+  "phone": "+82 10-1111-2222",
+  "text": "이것은 테스트 메시지입니다."
+}
